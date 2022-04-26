@@ -33,7 +33,7 @@ insert into tb_personagens (nome, forca, agilidade, inteligencia, classe_id) val
                                                                                     ("Thiago", 4, 8, 10, 3);
                                                                                     
 select * from tb_personagens where forca > 2000;
-select * from tb_personagens where agilidade > 1000 or agilidade < 2000;
+select * from tb_personagens where agilidade > 1000 and agilidade < 2000;
 select * from tb_personagens where nome like "%c%";
 select * from tb_personagens inner join tb_classe on tb_classe.id = tb_personagens.classe_id;
 select * from tb_personagens inner join tb_classe on tb_classe.id = tb_personagens.classe_id where classe_id = 2;
